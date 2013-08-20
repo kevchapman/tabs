@@ -1,0 +1,33 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\000033}}
+.tabs .tab_mask {
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\000034}}
+.tabs .tab_scroll {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\000035}}
+.tabs .tab_nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\000037}}
+.tabs .tab_nav li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\000038}}
+.tabs .tab_nav a {
+  display: block;
+  background: #eee;
+  line-height: 30px;
+  padding: 0 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\0000310}}
+.tabs .tab_nav a.active {
+  background: #dddddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Kev\/Git\/tabs\/demo\/styles\/tabs\.scss}line{font-family:\0000315}}
+.tabs .tab_item {
+  background: #dddddd;
+}

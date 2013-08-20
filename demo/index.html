@@ -1,0 +1,53 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Tabs</title>
+	<link rel="stylesheet" href="bower_components/bootstrap.css/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/tabs.css">
+</head>
+<body>
+	<div class="container">
+		<div class="hero-unit">
+			<h1>Tabs</h1>
+			<p>Light weight jQuery tabs</p>
+			<p>This demo shows different options and very minimal styling. Styles are set in demo/styles/tabs.scss.I would suggest adding these to your project and overiding them within your styles to give the desired look</p>
+		</div>
+		<div id="tab1" class="tabs">
+			<ul class="tab_nav">
+				<li><a href="#tabItem01">tab01</a></li>
+				<li><a href="#tabItem02">tab02</a></li>
+				<li><a href="#tabItem03">tab03</a></li>
+			</ul>
+			<div class="tab_mask">
+				<div class="tab_scroll">
+					<div class="tab_item">
+						<h3>tab01</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, vel, reiciendis, sint, ratione odit quasi illo repellat ex impedit ipsam numquam quo odio commodi nemo saepe optio molestiae. Ad, commodi!</p>
+					</div>
+					<div class="tab_item">
+						<h3>tab02</h3>
+					</div>
+					<div class="tab_item">
+						<h3>tab03</h3>
+						<p>Added extra copy to demo heights</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ipsum tempore magnam quae quas quia fugit quis nobis rem accusantium vitae odit eaque ex reiciendis doloribus. Sequi minima asperiores repellendus.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, ipsum tempore magnam quae quas quia fugit quis nobis rem accusantium vitae odit eaque ex reiciendis doloribus. Sequi minima asperiores repellendus.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="bower_components/jquery/jquery.min.js"></script>
+	<script src="js/tabs.js"></script>
+	<script>
+		(function(global,$){
+			$('#tab1').tabs();
+		})(window,jQuery);
+	</script>
+</body>
+</html>

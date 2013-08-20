@@ -1,0 +1,18 @@
+$tabBg: #ddd;
+.tabs{
+	.tab_mask{overflow: hidden;}
+	.tab_scroll{position: relative;}
+	.tab_nav{
+		margin: 0;padding: 0;list-style-type: none;
+		li{display: inline-block;}
+		a{
+			display: block;background: #eee;line-height:30px;padding:0 1em;
+			&.active{
+				background: $tabBg;
+			}
+		}
+	}
+	.tab_item{
+		background: $tabBg;
+	}
+}
