@@ -20,7 +20,7 @@
 		<div id="tab1" class="tabs">
 			<ul class="tab_nav">
 				<li><a href="#tabItem01">tab01</a></li>
-				<li><a href="#tabItem02">tab02</a></li>
+				<li><a href="/newpath/">tab02</a></li>
 				<li><a href="#tabItem03">tab03</a></li>
 			</ul>
 			<div class="tab_mask">
@@ -41,12 +41,35 @@
 				</div>
 			</div>
 		</div>
+		<div class="row mrgT">
+			<div class="span8">
+				<div id="tab2" class="tabs">
+					<ul class="tab_nav">
+						<li><a href="#tab201">tab01</a></li>
+						<li><a href="#tab202">tab02</a></li>
+					</ul>
+					<div class="tab_mask">
+						<div class="tab_scroll">
+							<div class="tab_item">
+								<h3>tab01</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, recusandae perspiciatis consequatur veniam aspernatur itaque voluptatem a magni dicta quis. Deleniti ea vitae excepturi reprehenderit explicabo distinctio ipsam assumenda! Corporis?</p>
+							</div>
+							<div class="tab_item">
+								<h3>tab02</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, recusandae perspiciatis consequatur veniam aspernatur itaque voluptatem a magni dicta quis. Deleniti ea vitae excepturi reprehenderit explicabo distinctio ipsam assumenda! Corporis?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="bower_components/jquery/jquery.min.js"></script>
 	<script src="js/tabs.js"></script>
 	<script>
 		(function(global,$){
 			$('#tab1').tabs();
+			$('#tab2').tabs();
 		})(window,jQuery);
 	</script>
 </body>

@@ -55,3 +55,20 @@ jQuery(function($) {
 ```
 ## images
 if the tab item contains any images and the tabs is set without a fixed height. Add width and height props to the images to maintain the correct height of the tab
+
+## public methods
+if you need to interact with your tabs after they have been created, or from another js function, you will need to create a reference to it and call its methods.
+
+to create a reference
+
+```html
+<script>
+var myTabs = $('#tabs1').data().tabs;
+
+// change tab
+myTabs.goTo(0); // pass in the index of the tab_item
+
+//recalculate the heights
+myTabs.setHeight(); // pass integer to set or leave blank to auto size
+</script>
+```
