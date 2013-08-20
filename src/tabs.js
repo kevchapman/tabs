@@ -31,7 +31,10 @@
 			this.navItems.each(function(i){
 				var $t = $(this);
 				$t.data({id:i}).click(function(){
-					t.goTo( $t.data().id );return false;
+					t.goTo( $t.data().id );
+					if(!$(this).data().deepLink){
+						return false;
+					}
 				});
 			});
 
@@ -51,9 +54,26 @@
 			var t = this;
 			this.scroll.width( (t.mask.width()) * t.items.length);
 			this.itemW = t.mask.width();
-			this.items.each(function(i){
-				t.tabs[i] = {ele:$(this),id:this.id,index:i,name:$(this).data().name || false};
-			}).css({float:'left'}).width(t.itemW);
+			this.items
+				.each(function(i){
+					var name = (function(){
+						var navItem = t.navItems.eq(i),
+							href = navItem.attr('href'),
+							hasHash = href.match(/^#/);
+						if(hasHash){
+							navItem.data().deepLink = true;
+						}
+						return hasHash ? href.replace('#','') : false;
+					})();
+					t.tabs[i] = {
+						ele:$(this),
+						id:this.id,
+						index:i,
+						name:name
+					};
+				})
+				.css({float:'left'})
+				.width(t.itemW);
 
 			if(this.opts.autosize){
 				this.navItems.each(function(i){
